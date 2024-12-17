@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 33%, #ffffff 66%, #ffffff 100%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo h1{
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20%;
+    margin-top: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(137, 43, 226, 0.692);
+    font-weight: 500;
+
+}
+.logo h1{
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.progress {
+    background-color: #ddd;
+    height: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+    transition: width 0.3s ease;
+}
+
+
+footer {
+    margin-top: 5.6%;
+    height: 80px;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    color: #ffffff;
+    background: rgb(73, 60, 60);
+    background: linear-gradient(90deg, rgba(73, 60, 60, 1) 0%, rgba(50, 50, 52, 0.779171043417367) 23%, rgba(182, 171, 177, 0.8379945728291316) 100%);
+}
