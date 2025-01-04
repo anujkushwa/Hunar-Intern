@@ -4,7 +4,7 @@ This repository contains projects and tasks completed during my internship at Hu
 
 # Website Project
 
-This repository contains a website built using HTML and CSS. The website includes multiple pages showcasing my skills and projects, making it a great portfolio example.
+This repository contains a website built using HTML, CSS and javaScipt. The website includes multiple pages showcasing my skills and projects, making it a great portfolio example.
 
 ## 📄 Pages Included
 
@@ -36,6 +36,8 @@ This repository contains a website built using HTML and CSS. The website include
 
 - **HTML5**: For the structure of the website.
 - **CSS3**: For styling and layout.
+- **Mediaquerry**: For making mobile responsive.
+- **javaScript**: For making Dynamic website.
 
 ## 📂 Folder Structure
 
