@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000000;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #ff6600;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 30px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #fff5e6;
+}
+
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffb84d;
+}
+
+.navbar .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffb84d;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-links a:hover::after {
+    width: 100%;
+}
+
+
+.contact-section {
+    padding: 10 px;
+    background-color: rgba(245, 245, 245, 0.49);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+dotlottie-player {
+    margin-top: 20px;
+    width: 300px;
+    height: 250px;
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #000000ea;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.submit-btn {
+    padding: 12px;
+    background-color: #e02e2e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #7f00e6;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #000000;
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar .nav-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 15px;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+
+    dotlottie-player {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 1rem;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    dotlottie-player {
+        width: 230px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 0.9rem;
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
+    .footer-container {
+        font-size: 0.9rem;
+    }
+
+    dotlottie-player {
+        width: 200px;
+        height: 180px;
+    }
+}

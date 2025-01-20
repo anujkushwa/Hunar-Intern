@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000000;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff6600;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 30px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #fff5e6;
+}
+
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffb84d;
+}
+
+.navbar .nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffb84d;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-links a:hover::after {
+  width: 100%;
+}
+
+
+/* General Section Styling */
+.skills-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .skills-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .skills-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Skill Card Styling */
+  .skill-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+  }
+  
+  .skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff6600;
+  }
+  
+  .skill-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+  
+    .skill-card {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-container h2 {
+      font-size: 2rem;
+    }
+  
+    .skill-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .skill-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+/* Footer Styling */
+.footer {
+    background-color: #000000;
+    margin-top: 16%;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar .nav-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-cards {
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 200px;
+        padding: 20px;
+    }
+
+    .skills-container h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .skills-container h2 {
+        font-size: 1.8rem;
+    }
+}
